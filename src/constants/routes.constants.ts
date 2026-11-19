@@ -1,9 +1,15 @@
 export const ROUTES = {
 	// Marketing
 	HOME: '/' as const,
-	STORY: '/our-story' as const,
-	FAQ: '/faq' as const,
+	ABOUT: '/about' as const,
 	CONTACT: '/contact' as const,
+	FEATURE: '/feature' as const,
+	PRICING: '/pricing' as const,
+	BLOGS: '/blogs' as const,
+	LOCATIONS: '/locations' as const,
+	SERVICES: '/services' as const,
+	STORY: '/our-story' as const,
+	FAQS: '/faqs' as const,
 
 	// Storefront
 	SHOP: '/shop' as const,

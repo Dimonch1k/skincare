@@ -2,40 +2,42 @@
 
 :root {
 	/* Figma foundations — Skincare / Glisten */
-	--color-primary: #512729;
-	--color-primary-strong: #572b2c;
-	--color-primary-deep: #5e2f2f;
-	--color-surface: #fcf3ee;
-	--color-surface-raised: #fff9f6;
-	--color-brand-blush: #fee0d9;
-	--color-accent: #ff835a;
-	--color-accent-soft: #ffefd7;
+	--color-brand: #512729;
+	--color-brand-strong: #572b2c;
+	--color-brand-deep: #5e2f2f;
+	--color-cream: #fcf3ee;
+	--color-cream-light: #fff9f6;
+	--color-blush: #fee0d9;
+	--color-coral: #ff835a;
+	--color-coral-light: #ffefd7;
 	--color-white: #ffffff;
 	--color-black: #000000;
 
 	--background: var(--color-surface-raised);
 	--foreground: var(--color-primary);
-	--muted: var(--color-primary-strong);
+	--muted: var(--color-brand-strong);
 	--border: color-mix(in srgb, var(--color-primary) 16%, transparent);
 	--font-brand-display: var(--font-beautique-display), Georgia, serif;
 	--font-brand-body: var(--font-shippori-mincho), Georgia, serif;
 }
 
-@theme {
+@theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--color-muted: var(--muted);
 	--color-border: var(--border);
-	--color-brand: var(--color-primary);
-	--color-brand-strong: var(--color-primary-strong);
-	--color-brand-deep: var(--color-primary-deep);
-	--color-cream: var(--color-surface);
-	--color-cream-light: var(--color-surface-raised);
-	--color-blush: var(--color-brand-blush);
-	--color-coral: var(--color-accent);
-	--color-coral-light: var(--color-accent-soft);
+	--color-brand: var(--color-brand);
+	--color-brand-strong: var(--color-brand-strong);
+	--color-brand-deep: var(--color-brand-deep);
+	--color-cream: var(--color-cream);
+	--color-cream-light: var(--color-cream-light);
+	--color-blush: var(--color-blush);
+	--color-coral: var(--color-coral);
+	--color-coral-light: var(--color-coral-light);
+
 	--font-sans: var(--font-brand-body);
 	--font-display: var(--font-brand-display);
+
 	--radius-card: 1.5rem;
 	--radius-arch: 6.25rem 0 0;
 }
@@ -99,7 +101,7 @@ h6 {
 }
 
 a {
-	color: inherit;
+	font-family: var(--font-brand-body);
 	text-decoration: none;
 }
 
